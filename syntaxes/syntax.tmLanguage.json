@@ -1,0 +1,84 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Syntax",
+	"patterns": [
+		{ "include": "#comments" },
+		{ "include": "#keywords" },
+		{ "include": "#names" },
+		{ "include": "#pretty-printing" },
+		{ "include": "#regexps" },
+		{ "include": "#strings" }
+	  ],
+	  "repository": {
+		"comments": {
+		  "patterns": [
+			{
+			  "begin": "/\\*",
+			  "end": "\\*/",
+			  "name": "comment.block.syntax",
+			  "patterns": [
+				{
+				  "include": "#comments"
+				},
+				{
+				  "match": "(?!/\\*)."
+				}
+			  ]
+			},
+			{
+			  "match": "//.*$\n?",
+			  "name": "comment.line.double-slash.syntax"
+			}
+		  ]
+		},
+		"keywords": {
+		  "patterns": [
+			{
+			  "match": "\\b(body|defaultIndent|defaultWidth|header|import|left|line|module|nested|none|nospacing|option|paren|rats|right|setOfString|String|verbose|Void)\\b",
+			  "name": "keyword.syntax"
+			}
+		  ]
+		},
+		"names": {
+		  "patterns": [
+			{
+			  "match": "\\b\\p{Upper}\\w*\\b",
+			  "name": "entity.name.class"
+			}
+		  ]
+		},
+		"pretty-printing": {
+		  "patterns": [
+			{
+			  "match": "\\b(nest|nestnl|sp)\\b",
+			  "name": "constant.numeric.syntax"
+			},
+			{
+			  "match": "\\\\n",
+			  "name": "constant.numeric.syntax"
+			}
+		  ]
+		},
+		"regexps": {
+		  "patterns": [
+			{
+			  "match": "\\[[^]]+\\]",
+			  "name": "string.quoted.double.syntax"
+			}
+		  ]
+		},
+		"strings": {
+		  "patterns": [
+			{
+			  "match": "\"[^\"]+\"",
+			  "name": "string.quoted.double.syntax"
+			},
+			{
+			  "match": "'[^']+'",
+			  "name": "string.quoted.single.syntax"
+			}
+		  ]
+		}
+	},
+	"scopeName": "source.syntax"
+}

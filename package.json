@@ -1,0 +1,26 @@
+{
+    "name": "syntax",
+    "displayName": "syntax",
+    "description": "Syntax Language Support",
+    "version": "1.0.0",
+    "publisher": "inkytonik",
+    "engines": {
+        "vscode": "^1.22.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "syntax",
+            "aliases": ["Syntax", "syntax"],
+            "extensions": [".syntax"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "syntax",
+            "scopeName": "source.syntax",
+            "path": "./syntaxes/syntax.tmLanguage.json"
+        }]
+    }
+}
