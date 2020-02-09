@@ -2,7 +2,7 @@
     "name": "syntax",
     "displayName": "sbt-rats Syntax",
     "description": "sbt-rats Syntax Language Support",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "publisher": "inkytonik",
     "author": {
         "name": "Anthony M. Sloane",
@@ -23,16 +23,25 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "syntax",
-            "aliases": ["Syntax", "syntax"],
-            "extensions": [".syntax"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "syntax",
-            "scopeName": "source.syntax",
-            "path": "./syntaxes/syntax.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "syntax",
+                "aliases": [
+                    "Syntax",
+                    "syntax"
+                ],
+                "extensions": [
+                    ".syntax"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "syntax",
+                "scopeName": "source.syntax",
+                "path": "./syntaxes/syntax.tmLanguage.json"
+            }
+        ]
     }
 }
