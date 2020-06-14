@@ -7,14 +7,14 @@
     "author": {
         "name": "Anthony M. Sloane",
         "email": "inkytonik@gmail.com",
-        "url": "https://bitbucket.org/inkytonik/"
+        "url": "https://github.com/inkytonik/"
     },
     "license": "MPL-2.0",
-    "homepage": "https://bitbucket.org/inkytonik/vscode-syntax",
-    "bugs": "https://bitbucket.org/inkytonik/vscode-syntax/issues",
+    "homepage": "https://github.com/inkytonik/vscode-syntax",
+    "bugs": "https://github.com/inkytonik/vscode-syntax/issues",
     "repository": {
         "type": "git",
-        "url": "https://bitbucket.org/inkytonik/vscode-syntax"
+        "url": "https://github.com/inkytonik/vscode-syntax"
     },
     "engines": {
         "vscode": "^1.22.0"
